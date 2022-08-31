@@ -31,6 +31,7 @@ const Cocktails = () => {
   if (cocktails.length !== 0) {
     return (
       <div className="row justify-content-center mt-4 p-2">
+        <h2 className="text-center "> cocktails </h2>
         {cocktails.map((cocktail) => {
           return <Card key={cocktail.id} {...cocktail} />;
         })}
